@@ -1,14 +1,13 @@
 'use strict';  
 var webpack = require('webpack');  
-//path = require('path');  
 // PATHS
 var PATHS = {  
-  app: __dirname + '/app'
+  build: __dirname + '/app/built'
 };
 module.exports = {  
     entry: './app/index.js',
     output: {
-      path: PATHS.app,
+      path: PATHS.build,
       filename: 'bundle.js'
     },
     module: {
@@ -16,6 +15,15 @@ module.exports = {
         {
           test: /\.scss$/,
           loader: 'style!css!sass'
+        },
+        {
+          test: /\.js$/,
+          loader: 'ng-annotate!babel!jshint',
+          exclude: /node_modules/
+        },
+        {
+          test: /\.html/,
+          loader: 'raw'
         }
       ]
     }

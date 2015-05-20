@@ -1,0 +1,29 @@
+build skeleton project
+  make index.js just do an alert
+build using CLI "wepback app/index.js app/built/bundle.js"
+test with http-server
+build using CLI "webpack
+create config file with no modules
+build using cli "webpack"
+test
+discuss dev server
+install and run dev server, discuss content-base
+create an npm start command
+run dev server
+  discuss http://localhost:8080/webpack-dev-server/ vs just localhost:8080
+add index.scss
+add module for scss
+discuss how it puts styles in the head
+npm install angular
+add app.js, mainCtrl, tags in html
+add module loading for angular
+test
+add module loading for jshint
+test
+add module loading for es6
+test
+add directive with template string
+add template file
+add raw-loader
+require in the template
+test
